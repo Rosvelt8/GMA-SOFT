@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            color: white;
+            background-color: #18191a;
+        }
+        #app{
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .message-group-received{
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .message-group-received > div:first-child{
+            margin-top: auto;
+            margin-right: 5px;
+        }
+        .message-group-received > div:last-child{
+            flex-grow: 1;
+        }
+        .message-group-received > div:first-child >img{
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+        }
+        .message-received{
+            max-width: 75%;
+            margin: 2px 0;
+            display: flex;
+        }
+        .message-received:first-child > .message-received-text{
+            border-top-left-radius: 20%;
+        }
+        .message-received:last-child > .message-received-text{
+            border-bottom-left-radius: 20%;
+        }
+        .message-received-text{
+            padding: 10px;
+            min-height: 20px;
+            background-color: #373737;
+            border-radius: 4px 20px 20px 4px;
+        }
+        .message-group-sent{
+            width: 100%;
+            margin-bottom: 20px; 
+            text-align: right;
+        }
+        .message-sent{
+            max-width: 75%;
+            display: flex;
+            margin: 2px 0 2px auto;
+        }
+        .message-sent-text{
+            padding: 10px;
+            min-height: 20px;
+            background-color: #aa3535;
+            border-radius: 4px 20px 20px 4px;
+            margin-left: auto;
+            min-height: 20px;
+        }
+        .message-sent:first-child > .message-sent-text{
+            border-top-right-radius: 20%;
+        }
+        .message-sent:last-child > .message-sent-text{
+            border-bottom-right-radius: 20%;
+        }
+        .message-sent-statut{
+            width: 25px;
+            display: flex;
+            margin-left: 5px;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="message-group-received">
+            <div>
+                <img src="../assets/img/landing1.jpg" alt="">
+            </div>
+            <div>
+                <div class="message-received">
+                    <div class="message-received-text">
+                        Bonjour gars comment tu vas?
+                    </div>
+                </div>
+                <div class="message-received">
+                    <div class="message-received-text">
+                        Bonjour gars comment tu vas?
+                    </div>
+                </div>
+                <div class="message-received">
+                    <div class="message-received-text">
+                        Bonjour gars comment tu vas?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message-group-sent">
+            <!-- <div>
+                <img src="../assets/img/landing1.jpg" alt="">
+            </div> -->
+            <div>
+                <div class="message-sent">
+                    <div class="message-sent-text">
+                        Bonjour gars comment tu vas?
+                    </div>
+                    <div class="message-statut">&#128526;</div>
+                </div>
+                <div class="message-sent">
+                    <div class="message-sent-text">
+                        Bonjour gars comment tu vas?
+                    </div>
+                    <div class="message-statut">&#128526;</div>
+                </div>
+                <div class="message-sent">
+                    <div class="message-sent-text">
+                        Bonjour gars comment tu vas?
+                    </div>
+                    <div class="message-sent-statut">&#128526;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
